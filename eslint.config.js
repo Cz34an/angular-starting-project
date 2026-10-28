@@ -9,7 +9,14 @@ const eslintPluginPrettierRecommended = require('eslint-plugin-prettier/recommen
 
 module.exports = defineConfig([
   {
-    ignores: ['src/app/ui/**', 'src/app/core/api/**'],
+    ignores: [
+      '.angular/**',
+      'dist/**',
+      'out-tsc/**',
+      'coverage/**',
+      'src/app/ui/**',
+      'src/app/core/api/**',
+    ],
   },
   {
     files: ['**/*.ts'],
